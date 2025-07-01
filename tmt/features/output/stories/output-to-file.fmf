@@ -1,0 +1,13 @@
+
+story: Output to a specified file
+description: >
+  Verify that butane can successfully generate a configuration and write it to a user-specified file path
+  using the --output parameter.
+example: |
+  1. Prepare a valid Butane configuration file.
+  2. Execute butane, specifying the input configuration and a new, valid output file path.
+  3. Verify that the output file is created at the specified path and contains the expected ignition configuration.
+tags:
+  - feature-output
+  - happy-path
+tier: 0

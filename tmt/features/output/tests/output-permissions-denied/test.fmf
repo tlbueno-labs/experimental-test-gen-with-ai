@@ -1,0 +1,17 @@
+
+test:
+    name: /output/output-permissions-denied
+    tier: 2
+    story: /features/output/stories/output-permissions-denied
+    tag:
+        - feature-output
+        - error-case
+    component:
+        - butane
+    duration: 1m
+    contact:
+        - your.email@example.com
+    description: | 
+        Verify that butane handles gracefully the scenario where the specified output file path
+        is in a directory or points to a file for which the user lacks write permissions.
+    test: ./test.sh

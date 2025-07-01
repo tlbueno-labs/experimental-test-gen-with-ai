@@ -1,0 +1,13 @@
+
+story: Output to non-existent directory
+description: >
+  Verify that butane handles gracefully the scenario where the specified output file path
+  points to a non-existent directory.
+example: |
+  1. Prepare a valid Butane configuration file.
+  2. Attempt to execute butane, specifying an output file path within a directory that does not exist.
+  3. Verify that butane reports an error and does not create the output file or the non-existent directory.
+tags:
+  - feature-output
+  - error-case
+tier: 2

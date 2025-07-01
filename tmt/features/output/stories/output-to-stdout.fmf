@@ -1,0 +1,13 @@
+
+story: Output to standard output (stdout)
+description: >
+  Verify that butane correctly outputs the generated configuration to standard output
+  when the --output parameter is not provided or explicitly set to '-'.
+example: |
+  1. Prepare a valid Butane configuration file.
+  2. Execute butane without specifying the --output parameter, or with --output -.
+  3. Capture the standard output and verify that it contains the expected ignition configuration.
+tags:
+  - feature-output
+  - happy-path
+tier: 0

@@ -1,0 +1,17 @@
+
+test:
+    name: /output/output-to-file
+    tier: 0
+    story: /features/output/stories/output-to-file
+    tag:
+        - feature-output
+        - happy-path
+    component:
+        - butane
+    duration: 1m
+    contact:
+        - your.email@example.com
+    description: | 
+        Verify that butane can successfully generate a configuration and write it to a user-specified file path
+        using the --output parameter.
+    test: ./test.sh

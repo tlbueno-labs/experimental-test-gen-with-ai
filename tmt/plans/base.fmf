@@ -1,0 +1,11 @@
+
+plan:
+    /plans/base
+    discover:
+        how: fmf
+        url: .
+        filter: 'tier: .*'
+    execute:
+        how: tmt
+    run:
+        - tmt run

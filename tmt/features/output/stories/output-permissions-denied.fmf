@@ -1,0 +1,13 @@
+
+story: Output to a file with insufficient permissions
+description: >
+  Verify that butane handles gracefully the scenario where the specified output file path
+  is in a directory or points to a file for which the user lacks write permissions.
+example: |
+  1. Prepare a valid Butane configuration file.
+  2. Attempt to execute butane, specifying an output file path in a location where write access is denied (e.g., a read-only directory or an existing file with restricted permissions).
+  3. Verify that butane reports a permission-related error and does not create/modify the output file.
+tags:
+  - feature-output
+  - error-case
+tier: 2
